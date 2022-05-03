@@ -34,7 +34,7 @@ GENDER_CHOICES =(
 
 class Booking(models.Model):
 
-   user = models.ForeignKey(User, on_delete=models.CASCADE)
+   #user = models.ForeignKey(User, on_delete=models.CASCADE)
    gender = models.CharField(max_length=100,choices=GENDER_CHOICES,default = 'M')
    firstname = models.CharField(max_length=100)
    lastname = models.CharField(max_length=30)
